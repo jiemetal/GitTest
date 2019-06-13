@@ -1,0 +1,17 @@
+package com.itheima.dao;
+
+import java.util.List;
+
+import com.itheima.po.Customer;
+
+public interface CustomerDao {
+public Customer findCustomerById(Integer id);
+
+public List<Customer> findAll();
+
+public void addCustomer(Customer customer);
+
+public void updateCustomer(Customer customer);
+
+public void deleteCustomer(Integer id);
+}
